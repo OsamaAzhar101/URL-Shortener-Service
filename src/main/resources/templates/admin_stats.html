@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener - Admin Stats</title>
+</head>
+<body>
+<h1>Admin Stats</h1>
+<ul>
+  <#list urls as url>
+  <li>
+    <a href="/${url.shortUrl}">${url.shortUrl}</a>
+    <br>
+    Original URL: ${url.originalUrl}
+    <br>
+    Shortened Count: ${url.shortenedCount}
+    <br>
+    Access Count: ${url.accessCount}
+  </li>
+</#list>
+</ul>
+</body>
+</html>

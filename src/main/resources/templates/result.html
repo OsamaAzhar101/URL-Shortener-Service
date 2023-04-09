@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>URL Shortener - Result</title>
+  <!--  <meta http-equiv="refresh" content="3;url=${url}">-->
+</head>
+<body>
+<h1>URL Shortened Successfully</h1>
+<p>Your shortened URL is: <a th:href="${url}" th:text="${url}">${url}</a></p>
+<p>You will be redirected to the original URL in 3 seconds...</p>
+</body>
+</html>

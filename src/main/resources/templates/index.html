@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+</head>
+<body>
+<h1>Welcome to URL Shortener</h1>
+<form th:action="@{/shorten}" method="post">
+<!--<form action="/shorten" method="post">-->
+  <label for="url">Enter URL:</label>
+  <input type="text" name="url" id="url" required>
+  <input type="submit" value="Shorten">
+</form>
+</body>
+</html>

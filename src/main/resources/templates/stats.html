@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener - Stats</title>
+</head>
+<body>
+<h1>Your Shortened URLs:</h1>
+<ul>
+  <li th:each="url : ${urls}">
+    <p>URL: <a th:href="${url.shortUrl}" th:text="${url.shortUrl}">${url.shortUrl}</a></p>
+    <br>
+    Original URL: <span th:text="${url.originalUrl}"></span>
+    <br>
+    Shortened Count: <span th:text="${url.shortenedCount}"></span>
+    <br>
+    Access Count: <span th:text="${url.accessCount}"></span>
+  </li>
+</ul>
+</body>
+</html>
